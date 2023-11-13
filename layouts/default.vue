@@ -1,4 +1,3 @@
-
 <template>
     <div>
 
@@ -14,6 +13,7 @@
                 </div>
 
                 <div id="list2">
+                    <div width="2em" height="2em"></div>
                     <NuxtLink to="/about" >首頁</NuxtLink>                
                 </div>
 
@@ -55,7 +55,7 @@
 
 <style>
 
-    .sidebar {
+    .sidebar{
     position: fixed;
     left: 0;
     top: 0;
@@ -63,7 +63,7 @@
     width: 35%;
     background: #eee;
    
-    /* 初始化状态为隐藏 */
+    
     transform: translateX(-100%);
     transition: transform 0.5s ease;
     
@@ -77,22 +77,19 @@
   
 
     .sidebar > div {
-  
-    margin: 15px 0; /* 设置上下间隔为 10px */
+
+    display: flex; /* 应用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    margin: 5% 0; /* 设置上下间隔为 10px */
+
     }
- 
+
+    #list2{
+    
+    }
 
 
 </style>
-
-
-<script>
-
-    export default {
-    name: 'MaterialSymbolsMenuRounded'
-    }
-
-</script>
 
 <script setup>
 
